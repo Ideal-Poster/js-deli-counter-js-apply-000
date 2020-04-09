@@ -1,7 +1,11 @@
-function takeANumber(line, newCustomer) {
+var number = 0;
+
+function takeANumber() {
   // line.push(newCustomer);
   // const placeInLine = line.length;
-  // return `Welcome, ${newCustomer}. You are number ${placeInLine} in line.`;
+  number += 1;
+  return `order number ${number}`;
+  
 } 
 
 function nowServing(line) {
