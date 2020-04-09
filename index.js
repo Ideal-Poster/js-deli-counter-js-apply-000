@@ -5,6 +5,7 @@ function takeANumber() {
   // const placeInLine = line.length;
   number += 1;
   return `order number ${number}`;
+
 } 
 
 function nowServing(line) {
@@ -21,7 +22,9 @@ function currentLine(line) {
   
   if(line.length === 0) return 'The line is currently empty.';
   const sentencePrefix = 'The line is currently: ';
-  const sentenceSuffix = line.map((customer, i) => {return`${i+1}. ${customer}`}).join(", ");
+  const sentenceSuffix = line.map((customer, i) => {
+    return`${i+1}. ${customer}`
+  }).join(", ");
   return sentencePrefix + sentenceSuffix;
   
   // if(line.length === 0) return 'The line is currently empty.';
