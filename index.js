@@ -5,7 +5,6 @@ function takeANumber() {
   // const placeInLine = line.length;
   number += 1;
   return `order number ${number}`;
-
 } 
 
 function nowServing(line) {
